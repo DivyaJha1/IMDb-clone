@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search Website</title>
+    <!-- font awesome icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <div class="container">
+        <p class="navbar-logo">IMDB<span>Clone.</span></p>
+        <ul class="navbar-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of Navigation bar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Welcome to Movie Search</h1>
+        <p>Find information about your favorite movies here!</p>
+      </div>
+    </div>
+    <!-- End of Jumbotron -->
+
+    <div class="wrapper">
+      <!-- search container -->
+      <div class="search-container">
+        <div class="search-element">
+          <h3>Search Movie:</h3>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search Movie Title ..."
+            id="movie-search-box"
+          />
+
+          <div class="search-list" id="search-list">
+            <!-- List of search results will be displayed here -->
+          </div>
+        </div>
+      </div>
+      <!-- end of search container -->
+
+      <!-- Result container -->
+      <div class="container">
+        <div class="result-container">
+          <div class="result-grid" id="result-grid">
+            <!-- Movie information will be displayed here -->
+          </div>
+        </div>
+      </div>
+      <!-- End of Result container -->
+    </div>
+
+    <!-- My favourite movies button -->
+    <div class="favourites-btn">
+      <button onclick="showFavouriteMovies()">My Favourite Movies</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2023 Movie Search Website. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Movie app js -->
+    <script src="src/index.js"></script>
+  </body>
+</html>
